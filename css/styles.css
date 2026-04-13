@@ -691,8 +691,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 8px;
   width: 100%;
+  gap: 0;
+}
+
+.modal-select-wrapper {
+  margin-bottom: 8px;
+}
+
+.modal-select-wrapper:last-of-type {
+  margin-bottom: 16px;
 }
 
 .modal-label-text {
@@ -714,9 +722,8 @@ a {
 }
 
 .icon-vector {
+  fill: currentColor;
   color: #2e2f42;
-  width: 12px;
-  height: 12px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -774,7 +781,6 @@ a {
 }
 
 .accept-terms-wrapper {
-  margin-top: 16px;
   width: 100%;
 }
 
