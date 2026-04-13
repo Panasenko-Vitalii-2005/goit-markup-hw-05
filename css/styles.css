@@ -487,6 +487,9 @@ a {
 
 .subscribe-wrapper {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .subscribe {
@@ -496,12 +499,6 @@ a {
   gap: 24px;
 }
 
-.subscribe-left {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .subscribe-input {
   width: 264px;
   height: 40px;
@@ -509,6 +506,11 @@ a {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  font-weight: 400;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -519,12 +521,6 @@ a {
 }
 
 .subscribe-input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-
-  /* line-height: 24px; */
-  line-height: 2;
-  letter-spacing: 0.04em;
   color: #fff;
 }
 
@@ -639,7 +635,7 @@ a {
   border-radius: 100%;
   color: #2e2f42;
   stroke-width: 1px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -772,6 +768,11 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-submit:hover,
+.modal-submit:focus {
+  background: #404bbf;
+}
+
 .accept-terms-wrapper {
   margin-top: 16px;
   width: 100%;
@@ -789,8 +790,8 @@ a {
 }
 
 .accept-checkbox:checked + .checkbox-box {
-  background-color: #4d5ae5;
-  border-color: #4d5ae5;
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
 
 .accept-checkbox:checked + .checkbox-box svg {
@@ -798,6 +799,7 @@ a {
 }
 
 .accept-terms {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
